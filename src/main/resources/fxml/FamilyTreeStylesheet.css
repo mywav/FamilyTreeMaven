@@ -1,0 +1,28 @@
+.anchorPane
+{
+    -fx-border-radius: 40 40 40 40;
+    -fx-background-radius: 40 40 40 40;
+    -fx-background-color: transparent;
+    -fx-background-image: url("treeImage.jpg");
+    -fx-background-color: #087CD8;
+}
+
+#titleLabel
+{
+    -fx-background-color: #000000;
+    -fx-background-radius: 15px;
+}
+
+.textAreaLabel
+{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    
+}
+
+.textArea
+{
+    -fx-background-color: #000000;
+    
+    
+}

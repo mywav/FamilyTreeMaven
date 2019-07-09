@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="521.0" prefWidth="787.0" styleClass="anchorPane" stylesheets="@FamilyTreeStylesheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ryannewbold.familytreemaven.FXMLController">
+    <children>
+      <Label id="titleLabel" fx:id="titleLabel" alignment="CENTER" layoutX="235.0" layoutY="32.0" prefHeight="37.0" prefWidth="318.0" styleClass="titleLabel" stylesheets="@FamilyTreeChapterTwentyTwoDashSix.css" text="Family Tree Display" textAlignment="CENTER" textFill="#fffefe">
+         <font>
+            <Font name="Verdana" size="29.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fx:id="closeButton" iconName="CLOSE" layoutX="751.0" layoutY="39.0" onMouseClicked="#handleCloseButton" size="3em" />
+      <FontAwesomeIcon fx:id="minimizeButton" iconName="MINUS" layoutX="726.0" layoutY="34.0" onMouseClicked="#handleMinimizeButton" size="2EM" />
+      <Button fx:id="importFileButton" layoutX="21.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#handleImportFileButton" prefHeight="56.0" prefWidth="200.0" text="Import File">
+         <graphic>
+            <FontAwesomeIcon iconName="DOWNLOAD" size="2em" />
+         </graphic>
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="21.0" layoutY="246.0" prefHeight="248.0" prefWidth="200.0" styleClass="textArea">
+         <effect>
+            <DropShadow height="62.51" radius="30.755" width="62.51" />
+         </effect>
+      </TextArea>
+      <Label layoutX="48.0" layoutY="202.0" styleClass="textAreaLabel" stylesheets="@FamilyTreeStylesheet.css" text="  Chosen File:  ">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button layoutX="565.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleDisplayFamilyTree" prefHeight="56.0" prefWidth="200.0" text="Display Family Tree">
+         <graphic>
+            <FontAwesomeIcon iconName="TREE" size="3em" />
+         </graphic>
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TreeView fx:id="treeView" layoutX="565.0" layoutY="246.0" prefHeight="248.0" prefWidth="200.0">
+         <effect>
+            <DropShadow height="77.34" radius="48.5475" width="118.85" />
+         </effect>
+      </TreeView>
+      <Label layoutX="591.0" layoutY="202.0" styleClass="textAreaLabel" text="  Family Tree:  ">
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+    </children>
+   <effect>
+      <Glow level="0.22" />
+   </effect>
+</AnchorPane>
